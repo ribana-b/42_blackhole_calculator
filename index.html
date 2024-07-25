@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blackhole Calculator</title>
+	</head>
+	<body>
+		<form id="ogform">
+			<label for="current_level">Current level</label>
+			<input id="current_level" type="number" name="current_level" step="0.01"/>
+			<label for="project_name">Project name</label>
+			<input id="project_name" list="projects" type="text" name="project_name"/>
+			<datalist id="projects">
+				<option value="libft"></option>
+				<option value="born2beroot"></option>
+				<option value="ft_printf"></option>
+				<option value="get_next_line"></option>
+				<option value="push_swap"></option>
+				<option value="minitalk"></option>
+				<option value="pipex"></option>
+				<option value="fract-ol"></option>
+				<option value="so_long"></option>
+				<option value="fdf"></option>
+				<option value="philosophers"></option>
+				<option value="minishell"></option>
+				<option value="cub3d"></option>
+				<option value="minirt"></option>
+				<option value="netpractice"></option>
+				<option value="cpp04"></option>
+				<option value="inception"></option>
+				<option value="webserv"></option>
+				<option value="ft_irc"></option>
+				<option value="cpp09"></option>
+				<option value="ft_transcendence"></option>
+			</datalist>
+			<label for="project_score">Project Score</label>
+			<input id="project_score" type="number" name="project_score" value="100"/>
+			<label for="bonus_coalition">Bonus coalition</label>
+			<input id="bonus_coalition" type="checkbox" name="bonus_coalition"/>
+			<button type="button" onclick="calculateBlackHoleDays()">Submit</button>
+		</form>
+		<div id="container"></div>
+		<div id="blackhole_days"></div>
+		<script src="./main.js"></script>
+	</body>
+</html>
